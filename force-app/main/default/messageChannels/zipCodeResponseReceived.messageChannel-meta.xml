@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description
+  >LMS for receiving communication from Zip Code external API</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>The full name of the country received</description>
+        <fieldName>countryName</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description
+    >The two-character code for the country received</description>
+        <fieldName>countryCode</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>The designated post code (zip code)</description>
+        <fieldName>postCode</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Name from Geografic information array</description>
+        <fieldName>placesName</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Latitude from Geografic information array</description>
+        <fieldName>placesLat</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Longitude from Geografic information array</description>
+        <fieldName>placesLong</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>State name from Geografic information array</description>
+        <fieldName>placesState</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description
+    >State Name Abbreviation from Geografic information array</description>
+        <fieldName>placesStateAbbrev</fieldName>
+    </lightningMessageFields>
+    <masterLabel>ZipCodeResponseReceived</masterLabel>
+</LightningMessageChannel>
