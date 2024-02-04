@@ -1,18 +1,11 @@
-# Salesforce DX Project: Next Steps
+# Salesforce DX Project: Coding Challenge
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## Description
 
-## How Do You Plan to Deploy Your Changes?
+A repo containing my coding challenge results in SFDX format (also includes a package.xml for easier push/pull)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Requirements/Dependencies
 
-## Configure Your Salesforce DX Project
+This solution requires that State/Country picklists are active and configured, per the following [article](https://help.salesforce.com/s/articleView?language=en_US&id=sf.admin_state_country_picklists_configure.htm&type=5).
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+For security, please assign the included Permission Set "Coding Challenge" to you user in order to have access to the solution; LWCs are available in the provided Lightning Page "Zip Code Coding Challenge"
