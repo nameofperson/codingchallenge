@@ -18,6 +18,7 @@ export default class ZipCodeDisplayCmp extends LightningElement {
   stateName;
   stateCode;
   placeName;
+  subscription;
 
   @wire(MessageContext)
   messageContext;
