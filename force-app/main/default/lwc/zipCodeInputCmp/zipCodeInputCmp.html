@@ -1,0 +1,33 @@
+<template>
+  <lightning-card title="Search" icon-name="standard:account">
+    <lightning-layout horizontal-align="center" multiple-rows="true">
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-combobox
+          name="country"
+          label="Country"
+          value={selectedCountry}
+          placeholder="Select Country"
+          options={countries}
+          onchange={countrySelectHandler}
+        ></lightning-combobox>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Zip Code"
+          placeholder="Enter a Zip Code"
+          onchange={zipCodeChangeHandler}
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-button
+          variant="brand"
+          label="Search"
+          title="Search"
+          icon-name="utility:search"
+          onclick={searchHandler}
+        ></lightning-button>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>

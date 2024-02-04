@@ -1,0 +1,70 @@
+<template>
+  <lightning-card title="Search Results" icon-name="standard:account">
+    <lightning-layout horizontal-align="center" multiple-rows="true">
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Place Name"
+          value={placeName}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="6" padding="around-small">
+        <lightning-input
+          type="text"
+          label="State Name"
+          value={stateName}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="6" padding="around-small">
+        <lightning-input
+          type="text"
+          label="State Code"
+          value={stateCode}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="6" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Country Name"
+          value={countryName}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="6" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Country Code"
+          value={countryCode}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Post Code / Zip Code"
+          value={postCode}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Latitude"
+          value={latitude}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" padding="around-small">
+        <lightning-input
+          type="text"
+          label="Longitude"
+          value={longitude}
+          disabled
+        ></lightning-input>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>
