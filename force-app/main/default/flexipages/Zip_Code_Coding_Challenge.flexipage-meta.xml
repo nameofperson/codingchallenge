@@ -7,7 +7,17 @@
                 <identifier>c_zipCodeInputCmp</identifier>
             </componentInstance>
         </itemInstances>
-        <name>column1</name>
+        <name>region1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>zipCodeDisplayGeneral</componentName>
+                <identifier>c_zipCodeDisplayGeneral</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
@@ -17,12 +27,12 @@
                 <identifier>c_zipCodeDisplayCmp</identifier>
             </componentInstance>
         </itemInstances>
-        <name>column2</name>
+        <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
     <masterLabel>Zip Code Coding Challenge</masterLabel>
     <template>
-        <name>flexipage:appHomeTemplateTwoColumns</name>
+        <name>flexipage:appHomeTemplateHeaderTwoColumns</name>
     </template>
     <type>AppPage</type>
 </FlexiPage>
