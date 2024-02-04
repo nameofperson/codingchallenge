@@ -41,6 +41,12 @@ export default class ZipCodeInputCmp extends LightningElement {
     this.selectedCountry = evt.detail.value;
   }
 
+  clearHandler(evt) {
+    evt.preventDefault();
+    this.selectedCountry = "";
+    this.zipCode = "";
+  }
+
   async searchHandler(evt) {
     evt.preventDefault();
     this.isLoading = true;

@@ -17,16 +17,30 @@
           label="Zip Code"
           placeholder="Enter a Zip Code"
           onchange={zipCodeChangeHandler}
+          value={zipCode}
         ></lightning-input>
       </lightning-layout-item>
-      <lightning-layout-item size="12" padding="around-small">
-        <lightning-button
-          variant="brand"
-          label="Search"
-          title="Search"
-          icon-name="utility:search"
-          onclick={searchHandler}
-        ></lightning-button>
+      <lightning-layout-item size="12">
+        <lightning-layout horizontal-align="left" multiple-rows="true">
+          <lightning-layout-item size="3" padding="around-small">
+            <lightning-button
+              variant="brand"
+              label="Search"
+              title="Search"
+              icon-name="utility:search"
+              onclick={searchHandler}
+            ></lightning-button>
+          </lightning-layout-item>
+          <lightning-layout-item size="3" padding="around-small">
+            <lightning-button
+              variant="neutral"
+              label="Clear"
+              title="Clear"
+              icon-name="utility:clear"
+              onclick={clearHandler}
+            ></lightning-button>
+          </lightning-layout-item>
+        </lightning-layout>
       </lightning-layout-item>
     </lightning-layout>
   </lightning-card>
