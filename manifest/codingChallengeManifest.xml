@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>AccountTriggerHandler</members>
+        <members>AccountTriggerHelper</members>
+        <members>RiskTriggerHandler</members>
+        <members>RiskTriggerHelper</members>
         <members>ZipCodeInputController</members>
         <members>ZipCodeInputControllerTest</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AccountTrigger</members>
+        <members>RiskValueChanged</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>ZipCodeAPI</members>
@@ -48,6 +57,7 @@
     </types>
     <types>
         <members>zipCodeDisplayCmp</members>
+        <members>zipCodeDisplayGeneral</members>
         <members>zipCodeInputCmp</members>
         <name>LightningComponentBundle</name>
     </types>
