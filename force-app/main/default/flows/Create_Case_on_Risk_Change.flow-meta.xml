@@ -79,8 +79,7 @@
                 <leftValueReference>$Record.CreatedById</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
-                    <elementReference
-          >Get_Referenced_Account.OwnerId</elementReference>
+                    <elementReference>Get_Referenced_Account.OwnerId</elementReference>
                 </rightValue>
             </conditions>
             <connector>
@@ -90,8 +89,7 @@
         </rules>
     </decisions>
     <environments>Default</environments>
-    <interviewLabel
-  >Create Case on Risk Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <interviewLabel>Create Case on Risk Change {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Create Case on Risk Change</label>
     <processMetadataValues>
         <name>BuilderType</name>
@@ -124,8 +122,7 @@
         <label>Get Admin User</label>
         <locationX>50</locationX>
         <locationY>494</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Set_Case_Owner_to_Admin</targetReference>
         </connector>
@@ -146,8 +143,7 @@
         <label>Get Referenced Account</label>
         <locationX>182</locationX>
         <locationY>170</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Is_Account_Owner_Running_User</targetReference>
         </connector>
@@ -168,8 +164,7 @@
         <label>Get System Admin Profile</label>
         <locationX>50</locationX>
         <locationY>386</locationY>
-        <assignNullValuesIfNoRecordsFound
-    >false</assignNullValuesIfNoRecordsFound>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_Admin_User</targetReference>
         </connector>
@@ -194,7 +189,7 @@
         <object>RiskValueChange__e</object>
         <triggerType>PlatformEvent</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>NewCaseSubject</name>
         <dataType>String</dataType>

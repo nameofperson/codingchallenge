@@ -7,16 +7,14 @@
         <locationX>176</locationX>
         <locationY>323</locationY>
         <assignmentItems>
-            <assignToReference
-      >TargetRiskValueChangeEvent.RiskValue__c</assignToReference>
+            <assignToReference>TargetRiskValueChangeEvent.RiskValue__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.Risk__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference
-      >TargetRiskValueChangeEvent.AccountId__c</assignToReference>
+            <assignToReference>TargetRiskValueChangeEvent.AccountId__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.Id</elementReference>
@@ -26,8 +24,7 @@
             <targetReference>Insert_Platform_Event</targetReference>
         </connector>
     </assignments>
-    <description
-  >A flow to fire off a platform event when an Account&apos;s Risk is changed</description>
+    <description>A flow to fire off a platform event when an Account&apos;s Risk is changed</description>
     <environments>Default</environments>
     <interviewLabel>Risk Value Changed {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Risk Value Changed</label>
@@ -61,8 +58,7 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference
-      >Set_Current_Risk_Value_to_Variable</targetReference>
+            <targetReference>Set_Current_Risk_Value_to_Variable</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -76,7 +72,7 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>TargetRiskValueChangeEvent</name>
         <dataType>SObject</dataType>
